@@ -1,0 +1,10 @@
+{
+  "name": "zxcvbn-on-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "zxcvbn": "^4.4.2"
+  }
+}
