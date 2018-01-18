@@ -12,4 +12,4 @@ functions:
     events:
       - http:
           path: calculate
-          method: get
+          method: post
