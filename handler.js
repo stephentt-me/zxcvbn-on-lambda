@@ -3,7 +3,8 @@ var zxcvbn = require("zxcvbn")
 
 module.exports.endpoint = (event, context, callback) => {
     let response
-    let password = JSON.parse(event.body)["password"]
+    let request = JSON.parse(event.body) // TODO: Handle wrong format
+    let password = request["password"]
 
     if (password) {
         let resultCheck = zxcvbn(password).score
